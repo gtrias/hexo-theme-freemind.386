@@ -6,6 +6,7 @@ body {
 
 h1 {
     color: rgba(51, 255, 0, 1);
+    text-transform: lowercase;
 }
 
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
@@ -40,6 +41,7 @@ a:link, a:visited:link {
 }
 
 .logo h1 {
+    color: #a2a2a2;
     padding-left: 0;
 }
 

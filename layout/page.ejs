@@ -1,5 +1,5 @@
 <div class="page-header logo">
-  <h1><% if (config.subtitle){ %><%= config.subtitle%><% } else { %><%= config.title%><% }%><span class="blink-fast">∎</span></h1>
+  <h1><%= page.title %><span class="blink-fast">∎</span></h1>
 </div>
 
 <div class="row page">
@@ -10,7 +10,6 @@
 	<div class="col-md-12">
 	<% } %>
 
-		<%- partial('post/slogan') %>
 		<div class="mypage">
 
 		<!-- title and entry -->
