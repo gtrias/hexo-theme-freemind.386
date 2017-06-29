@@ -1,1 +1,27 @@
-<%- partial('_partial/article', {item: page, post: false}) %>
+<div class="page-header logo">
+  <h1><% if (config.subtitle){ %><%= config.subtitle%><% } else { %><%= config.title%><% }%><span class="blink-fast">∎</span></h1>
+</div>
+
+<div class="row page">
+
+	<% if (theme.widgets.length) { %>
+	<div class="col-md-9">
+	<% } else { %>
+	<div class="col-md-12">
+	<% } %>
+
+		<%- partial('post/slogan') %>
+		<div class="mypage">
+
+		<!-- title and entry -->
+        <%- partial('_partial/article', {item: page, post: false, disableTitle: true}) %>
+
+		</div>
+
+	</div> <!-- col-md-9 -->
+
+	<% if (config.theme_config.widgets.length) { %>
+		<%- partial('_partial/sidebar') %>
+	<% } %>
+
+</div> <!-- row-fluid -->

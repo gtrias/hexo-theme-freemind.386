@@ -34,3 +34,16 @@ a:link, a:visited:link {
     -ms-user-select: none;
     user-select: none;
 }
+
+.logo {
+    background-image: none;
+}
+
+.logo h1 {
+    padding-left: 0;
+}
+
+.mypage,
+.page-header {
+    border-bottom: 2px solid #00992e;
+}
