@@ -8,7 +8,7 @@
   <%
   var title = [];
   if (page.current > 1) title.push(__('page', page.current));
-  if (page.title) title.push(page.seoTitle);
+  if (page.seoTitle) title.push(page.seoTitle);
   if (page.category) title.push(page.category);
   if (page.tag) title.push(page.tag);
   if (page.archive){
@@ -31,8 +31,8 @@
   <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <% if (page.title){ %><meta property="og:title" content="<%= page.seoTitle %>"/><% } %>
-  <meta property="og:site_name" content="<%= config.title %>"/>
+  <% if (page.seoTitle){ %><meta property="og:title" content="<%= page.seoTitle %>"/><% } %>
+  <meta property="og:site_name" content="<%= config.seoTitle%>"/>
 
   <% if(page.cover) { %>
     <meta property="og:image" content="<%= page.cover %>" />
