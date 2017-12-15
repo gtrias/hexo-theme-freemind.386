@@ -8,7 +8,7 @@
   <%
   var title = [];
   if (page.current > 1) title.push(__('page', page.current));
-  if (page.title) title.push(page.title);
+  if (page.title) title.push(page.seoTitle);
   if (page.category) title.push(page.category);
   if (page.tag) title.push(page.tag);
   if (page.archive){
