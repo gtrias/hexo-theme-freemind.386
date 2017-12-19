@@ -1,5 +1,5 @@
 
-<a id="gotop" href="#">   
+<a id="gotop" href="#">
   <span>⬆︎TOP</span>
 </a>
 
@@ -7,7 +7,7 @@
 <script src="<%- config.root %>js/gallery.js"></script>
 <script src="<%- config.root %>js/bootstrap.min.js"></script>
 <script src="<%- config.root %>js/main.js"></script>
-<script src="<%- config.root %>js/search.js"></script> 
+<script src="<%- config.root %>js/search.js"></script>
 
 <% if (theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
@@ -19,8 +19,19 @@
 </script>
 <% } %>
 
+<script>
+tocbot.init({
+  // Where to render the table of contents.
+  tocSelector: '.js-toc',
+  // Where to grab the headings to build the table of contents.
+  contentSelector: '.mypage',
+  // Which headings to grab inside of the contentSelector element.
+  headingSelector: 'h1, h2, h3',
+});
+</script>
+
 <% if (config.search) { %>
-   <script type="text/javascript">      
+   <script type="text/javascript">
      var search_path = "<%= config.search.path %>";
 	 if (search_path.length == 0) {
 	 	search_path = "search.xml";

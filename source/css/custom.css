@@ -87,3 +87,7 @@ a:link, a:visited:link {
 .widget {
     border-bottom: none;
 }
+
+.affix {
+    top: 48px;
+}

@@ -1,5 +1,12 @@
 <div class="col-md-3">
-	<div id="sidebar">
+	<div id="sidebar" data-spy="affix" data-offset-top="100" data-offset-bottom="0">
+        <div class="toc">
+            <h4><%= __('TOC') %></h4>
+            <div>
+                <div class="js-toc">
+                </div>
+            </div>
+        </div>
 	<% theme.widgets.forEach(function(widget){ %>
 			<%- partial('../_widget/' + widget) %>
 		<% }); %>
