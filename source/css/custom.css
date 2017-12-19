@@ -21,13 +21,33 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h2 {
     padding-top: 20px;
     margin-top: 0;
 }
 
-h3 {
-    font-size: 16px;
-    margin-top: 30px;
+h2:after {
+    content: " ]";
+}
+h2:before {
+    content: "[ ";
+}
+
+h3:after,
+h3:before {
+    content: "";
 }
 
 p {
