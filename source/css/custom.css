@@ -34,6 +34,11 @@ p {
   text-shadow: 0px 0px 1px #4d94aa;
 }
 
+h2,
+a {
+  outline: 0;
+}
+
 a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
   /*text-shadow: none;*/
@@ -90,4 +95,11 @@ a:link, a:visited:link {
 
 .affix {
     top: 48px;
+}
+
+.toc {
+    position: relative;
+    padding: 0;
+    background: transparent;
+    overflow-y: hidden;
 }
