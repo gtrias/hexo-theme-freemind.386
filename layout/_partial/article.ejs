@@ -29,12 +29,5 @@
 	<%- partial('post/comment', {page: item}) %>
 	</div> <!-- col-md-9/col-md-12 -->
 
-	<% if (post) { %>
-	<div id="side_meta" data-spy="affix" data-offset-top="100" data-offset-bottom="0">
-        <%- partial('toc') %>
-		<%- partial('post/meta', {item: item}) %>
-	</div>
-	<% } %>
-
 </div><!-- row -->
 <%- partial('post/comment_footer', {page: item}) %>
