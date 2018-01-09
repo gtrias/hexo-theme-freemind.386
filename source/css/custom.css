@@ -123,3 +123,11 @@ a:link, a:visited:link {
     background: transparent;
     overflow-y: hidden;
 }
+
+@media(max-width:767px){
+   .affix {
+     position: static;
+     width: auto;
+     top: 0;
+    }
+}
