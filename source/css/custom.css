@@ -134,6 +134,7 @@ a:link, a:visited:link {
     display: inline;
 }
 
+#sidebar ,
 #side_meta {
     max-width: 265px;
 }
