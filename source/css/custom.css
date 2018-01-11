@@ -134,6 +134,10 @@ a:link, a:visited:link {
     display: inline;
 }
 
+#side_meta {
+    max-width: 265px;
+}
+
 @media(max-width:767px){
    .affix {
      position: static;
