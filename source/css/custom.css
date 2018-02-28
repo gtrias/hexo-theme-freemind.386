@@ -137,6 +137,10 @@ a:link, a:visited:link {
     max-width: 265px;
 }
 
+blockquote {
+    background-color: #363636;
+}
+
 @media(max-width:767px){
    .affix {
      position: static;
