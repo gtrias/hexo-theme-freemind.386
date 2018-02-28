@@ -4,6 +4,16 @@ body {
     text-shadow: 0px 0px 0px #4d94aa;
 }
 
+body, .post, ul, p {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+}
+
+
+a {
+    font-family: DOS,SimHei,Monaco,Menlo,Consolas,'Courier New',monospace;
+}
+
 h1 {
     color: rgba(51, 255, 0, 1);
     text-transform: lowercase;
@@ -41,6 +51,11 @@ h4 {
     font-size: 18px;
 }
 
+h2, h3, h4 {
+    color: #bbb;
+    font-weight: normal;
+}
+
 h2:after {
     content: " ]";
 }
@@ -54,7 +69,6 @@ h3:before {
 }
 
 p {
-  text-shadow: 0px 0px 0px #4d94aa;
 }
 
 h2,
@@ -139,6 +153,22 @@ a:link, a:visited:link {
 
 blockquote {
     background-color: #363636;
+}
+
+hr {
+    height: 0.25em;
+    padding: 0;
+    margin: 24px 0;
+    background-color: #363636;
+    border: 0;
+}
+
+pre, .highlight, .gist {
+    background: #333 !important;
+}
+
+.toc-list {
+    list-style: none;
 }
 
 @media(max-width:767px){
