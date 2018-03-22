@@ -287,7 +287,7 @@ pre, .highlight, .gist {
 }
 
 .glitch:after {
-  transform: translateZ(0);
+  transform: rotateZ(360deg);
   content: attr(data-text);
   position: absolute;
   left: 2px;
@@ -391,7 +391,7 @@ pre, .highlight, .gist {
 }
 
 .glitch:before {
-  transform: translateZ(0);
+  transform: rotateZ(360deg);
   content: attr(data-text);
   position: absolute;
   left: -2px;
