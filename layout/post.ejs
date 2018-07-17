@@ -1,4 +1,12 @@
+<% if (!page.disableComments) { %>
 <% page.comment = true; %>
+<% } %>
+
+<% if (!page.disableTitle) { %>
+<div class="page-header logo">
+  <h1 class="glitch" data-text="<%= page.title %>∎"><%= page.title %><span class="blink-fast">∎</span></h1>
+</div>
+<% } %>
 
 <div class="col-md-9">
 <%- partial('_partial/article', {item: page, post: true}) %>
