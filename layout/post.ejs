@@ -12,10 +12,6 @@
 <%- partial('_partial/article', {item: page, post: true}) %>
 </div>
 
-<div class="col-md-3">
-    <div id="side_meta" data-spy="affix" data-offset-top="100" data-offset-bottom="0">
-        <% if (config.theme_config.widgets.length) { %>
-            <%- partial('_partial/sidebar') %>
-        <% } %>
-    </div>
-</div>
+<% if (config.theme_config.widgets.length) { %>
+    <%- partial('_partial/sidebar') %>
+<% } %>
