@@ -14,7 +14,8 @@
 
 <div class="col-md-3">
     <div id="side_meta" data-spy="affix" data-offset-top="100" data-offset-bottom="0">
-        <%- partial('_partial/toc') %>
-        <%- partial('_partial/post/meta', {item: page}) %>
+        <% if (config.theme_config.widgets.length) { %>
+            <%- partial('_partial/sidebar') %>
+        <% } %>
     </div>
 </div>

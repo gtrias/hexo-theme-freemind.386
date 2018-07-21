@@ -1,5 +1,7 @@
 <div class="col-md-3">
 	<div id="sidebar" data-spy="affix" data-offset-top="100" data-offset-bottom="0">
+        <%- partial('_partial/toc') %>
+        <%- partial('_partial/post/meta', {item: page}) %>
         <%- partial('toc') %>
         <% theme.widgets.forEach(function(widget){ %>
             <%- partial('../_widget/' + widget) %>
